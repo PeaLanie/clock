@@ -34,17 +34,5 @@ $(function() {
         minutes_arm.css('transform', 'rotate(' + minutes_angle + 'deg)')
         hours_arm.css('transform', 'rotate(' + hours_angle + 'deg)')
     }, 1000)
-    let i = 0
-    setInterval(() => {
-    function getRandomNumber(any) {
-        return Math.floor(Math.random() * any)
-    }
-    let border = '4px dashed ' + color_list[i]
-    $('.digital').css('border', border)
-    i++
-    if (i > color_list.length) {
-        i = 0
-    }
-    }, 300)
 })
 
